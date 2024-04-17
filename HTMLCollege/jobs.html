@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misael Cruz</title>
+    <style>
+        body {
+            margin: 1;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #335670;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        .imagem_Misa {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: center;
+
+        }
+
+        .principal {
+            grid-column-start: 3;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 10px 150px;
+            border: solid #335670 1px;
+            
+        }
+
+        a:hover {
+            background-color: #335670;
+            color: white;
+        }
+
+        li {
+            float: left;
+        }
+
+        /* dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_Misa {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                border-radius: 50%;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- realizando cabeçalho -->
+    <header class="container">
+        <h1 
+            style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: xxx-large;">Misael Gomes da Cruz
+        </h1>
+        
+        <h3 
+            style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Computer Engineer and Systems Analysis and Development
+        </h3><br>
+
+    </header>
+
+    <!-- realizando menu de links -->
+    <nav class="container menu">
+        <ul>
+            <li>
+                <a href="index.html">My Career</a>
+            </li>
+
+            <li>
+                <a href="aboutme.html">About Me</a>
+            </li>
+
+            <li>
+                <a href="jobs.html">Jobs</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- realizando tela da esquerda com informações pessoais -->
+    <div class="container wrapper">
+            <div>
+                <h3 
+                    style="font-family: Arial, Helvetica, sans-serif;color: #335670;text-align: center;">PERSONAL PROFILE
+                </h3>
+                <aside class="imagem_Misa">
+                    <img src="ImagemMisael.png" title = "Misael Perfil" width="65%" >
+                </aside>
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Job: Intern
+                </p>
+
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Birth date: 02/02/2004
+                </p>
+
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Matital Status: Single
+                </p>
+
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Very motivated, constantly development of my skills and growth professional. I trust my ability to create interesting ideas for solve problems and develop my work</p>
+
+                <br>
+
+                <h3 
+                    style="font-family: Arial, Helvetica, sans-serif;color: #335670;text-align: center;">CONTACTS
+                </h3>
+
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Adress: Avenida Armando Fajardo, 763 Bairro Igara Canoas, RS
+                </p>
+
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Email: misaelgomesc@gmail.com
+                </p>
+
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Phone: (51) 982049463
+                </p>
+            </div>
+
+            <!-- iniciando tela central -->
+        <section class="principal">
+
+            <h3 
+                style="font-family: Arial, Helvetica, sans-serif;color: #335670;">PROJECTS
+            </h3>
+
+            <p 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Here we have some code examples that were developed by me. 
+                <br><br> This one, for example, was developed with the aim of connecting with Gogle Sheets and carry out some measurements in Python, then writing the modifications in the spreadsheet itself.
+            </p><br>
+
+            <a 
+                href="https://github.com/Cruz-Misael/Desafio-Tunts.Rocks/blob/main/ConecttionPythonSheet.py">GIT HUB
+            </a><br><br>
+
+            <p 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;"> 
+                In this other example carried out for a college project, a linked list was made to insert items and insert it in the position in which it was programmed. 
+                Taking into consideration the number and color. If it is green it will be placed at the bottom, if yellow it will have priority.
+            </p><br>
+
+        <a 
+            href="https://github.com/Cruz-Misael/College_Jobs/blob/main/ListProject.py">GIT HUB
+        </a><br><br>
+
+            <p 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">
+                And finally, here is a program in the C language, created for the purpose of manipulating and storing
+                personal information.<br> The program begins by asking the user to enter data for six different
+                records. <br> Each record must include the following information: Name, CPF,
+                Telephone (DDD+phone number) and Email.
+                Once collected, you must store them in a file in CSV format.
+            </p><br>
+
+            <a
+                href="https://github.com/Cruz-Misael/College_Jobs/blob/main/Project1.C">GIT HUB
+            </a>
+            
+
+            <!-- iniciando a última seção para inserir a imagem -->
+            <section 
+                class="imagem_Misa"><img src="git.png" title = "Git Hub" width="20%" >
+            </section>
+        </section>
+</html>
