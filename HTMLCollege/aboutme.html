@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misael Cruz</title>
+    <style>
+        body {
+            margin: 1;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #335670;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        .imagem_Misa {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: center;
+
+        }
+
+        .principal {
+            grid-column-start: 3;
+            grid-column-end: 8;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        .secundario {
+            grid-column-start: 8;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 10px 150px;
+            border: solid #335670 1px;
+        }
+
+        a:hover {
+            background-color: #335670;
+            color: white;
+        }
+
+        li {
+            float: left;
+        }
+
+        /* dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_Misa {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                border-radius: 50%;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+        <!-- realizando o cabeçalho -->
+        <header class="container">
+
+        <h1 
+            style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: xxx-large;">Misael Gomes da Cruz
+        </h1>
+
+        <h3 
+            style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Computer Engineer and Systems Analysis and Development
+        </h3>
+
+        <br>
+
+    </header>
+    <!-- realizando menu dos links -->
+    <nav class="container menu">
+        <ul>
+            <li>
+                <a href="index.html">My Career</a>
+            </li>
+
+            <li>
+                <a href="aboutme.html">About Me</a>
+            </li>
+
+            <li>
+                <a href="jobs.html">Jobs</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- lado direito da tela -->
+    <div class="container wrapper">
+            <div>
+                <h3 style="font-family: Arial, Helvetica, sans-serif;color: #335670;text-align: center;">PERSONAL PROFILE</h3>
+                <aside class="imagem_Misa">
+                    <img src="ImagemMisael.png" title = "Misael Perfil" width="65%" >
+                </aside>
+
+                <!-- dados pessoais -->
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Job: Intern
+                </p>
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Birth date: 02/02/2004
+                </p>
+
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Matital Status: Single
+                </p>
+                
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Very motivated, constantly development of my skills and growth professional. I trust my ability to create interesting ideas for solve problems and develop my work
+                </p>
+
+                <br>
+
+                <h3 
+                    style="font-family: Arial, Helvetica, sans-serif;color: #335670;text-align: center;">CONTACTS
+                </h3>
+
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Adress: Avenida Armando Fajardo, 763 Bairro Igara Canoas, RS
+                </p>
+
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Email: misaelgomesc@gmail.com
+                </p>
+
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Phone: (51) 982049463
+            </div>
+
+
+        <section class="principal">
+                <!-- centro da tela -->
+            <h3 
+                style="font-family: Arial, Helvetica, sans-serif;color: #335670;">ABOUT ME
+            </h3>
+            <p 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;"> My name is Misael, I'm a Systems Analysis and Development student at Uninter.
+            </p>
+
+            <p 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;"> I currently live in Canoas RS with my girlfriend, who we have been together for 6 years. We met at daycare, studied together and started dating when we were 15 and since then we are very happy.
+            </p>
+
+            <img src="marriage.png" title = "Misael Perfil" width="20%">
+
+            <p 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">  Our daughter, a cat, named Lili, lives with us. She is very naughty but at the same time very cute time. When she makes art it's almost impossible to curse her but it's still necessary.
+            </p>
+
+            <img src="cats.png" title = "Misael Perfil" width="20%">
+
+            <p 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;"> I like doing sports like running, which I'm training to do my first Half Marathon until the end of this year.
+            </p>
+
+            <img src="runner.png" title = "Misael Perfil" width="20%">
+
+            <p 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">  And I also go to the gym to better perform in speed training. I usually train from Monday to Friday but sometimes I need to train on the weekends too to make up for some another day.
+            </p>
+
+        </section>
+            <!-- lado esquerdo da tela -->
+        <section class="secundario">
+            
+            <br><br><br>
+            <img src="technology.png" title = "Misael Perfil" width="80%">
+            <br><br><br><br><br>
+            <img src="gym.png" title = "Misael Perfil" width="80%">
+
+        </section>
+            
+
+</html>

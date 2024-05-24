@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misael Cruz</title>
+    <style>
+        body {
+            margin: 1;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #335670;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        .imagem_Misa {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: center;
+
+        }
+
+        .principal {
+            grid-column-start: 3;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 10px 150px;
+            border: solid #335670 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #335670;
+            color: white;
+        }
+
+        /* dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_Misa {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                border-radius: 50%;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- realizando cabeçalho -->
+    <header class="container">
+        <h1 
+            style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: xxx-large;">Misael Gomes da Cruz
+        </h1>
+        
+        <h3 
+            style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Computer Engineer and Systems Analysis and Development
+        </h3>
+        
+        <br>
+
+    </header>
+
+    <!-- realizando menu de links -->
+    <nav class="container menu">
+        <ul>
+            <li>
+                <a href="index.html">My Career</a>
+            </li>
+            
+            <li>
+                <a href="aboutme.html">About Me</a>
+            </li>
+            
+            <li>
+                <a href="jobs.html">Jobs</a></li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- tela da esquerda com dados pessoais -->
+    <div class="container wrapper">
+            <div>
+                <h3 
+                    style="font-family: Arial, Helvetica, sans-serif;color: #335670;text-align: center;">PERSONAL PROFILE
+                </h3>
+                
+                <aside class="imagem_Misa">
+                    <img src="ImagemMisael.png" title = "Misael Perfil" width="65%" >
+                </aside>
+
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Job: Intern
+                </p>
+                
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Birth date: 02/02/2004
+                </p>
+                
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Matital Status: Single
+                </p>
+                
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Very motivated, constantly development of my skills and growth professional. I trust my ability to create interesting ideas for solve problems and develop my work
+                </p>
+
+                <br>
+
+                
+                <h3 
+                    style="font-family: Arial, Helvetica, sans-serif;color: #335670;text-align: center;">CONTACTS
+                </h3>
+
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Adress: Avenida Armando Fajardo, 763 Bairro Igara Canoas, RS
+                </p>
+
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Email: misaelgomesc@gmail.com
+                </p>
+
+                <p 
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;text-align: center;">Phone: (51) 982049463
+                </p>
+            </div>
+
+            <!-- tela central -->
+        <section class="principal">
+            
+            <h3 
+                style="font-family: Arial, Helvetica, sans-serif;color: #335670;">COVER LETTER
+            </h3>
+
+            <p 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">
+                I started at the age of 16 in the maintenance and automation area when I studied Electrical Mechanics
+                Industrial Maintenance, in which I had the privilege of being the first class in Rio Grande do Sul to graduate
+                in the professional training in this area, at the Senai Institute of Technology.
+                At the beginning of 2022, I was called to the Assembler selection process at John Deere
+                Montenegro. I joined the company and remained in that role until 09/09/2022 when I was invited
+                to participate in the recruitment of interns for the unit, a state in which I find myself until the days
+                current.
+            <br>
+                In my internship, I carry out activities related to EPDP, such as assisting in the application of the
+                OEE, build or update layouts in AutoCAD, define processes in MPPlanner, create 3D drawings
+                in Creo Parametric, automate stations with JDAAT. Reflecting on the use of software
+                Windchill, Creo View, Utility Tool and SAP.
+                I often end up interacting with the ETEC team resulting in meetings entirely in English,
+                in which I expose myself directly to the language.
+            <br>
+                Currently, for improvement purposes, I am part of the “MD Tracking Tool” team of which
+                we participated in Hackathon Brasil 2023 with the EPDP and Line team management project
+                Designn. Therefore, expanding my knowledge also to the areas of Ignition, DataBricks,
+                SQL, Python and Power Platform.
+                I have intermediate knowledge in the "Office" package, but being advanced in Power BI, Excel,
+                Power Point and Power Apps.
+            </p>
+
+            <br>
+
+            <!-- listas com infomações técnicas profissionais-->
+            <h3 
+                style="font-family: Arial, Helvetica, sans-serif;color: #335670;">PROFESSIONAL SKILLS
+            </h3>
+
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Mechanical Technical Drawing (AutoCAD);
+            </li><br>
+
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Preventive, Predictive and Corrective Maintenance;
+            </li><br>
+
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Building Electrical, Electro-pneumatic and Electro-hydraulic;
+            </li><br>
+
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">PLC Programming - FBD and PLC Programming - Ladder;
+            </li><br>
+            
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Advanced English communication;
+            </li><br>
+
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Intermediate Spanish Communication;
+            </li><br>
+
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Python, Java, SQL, C, C#, C++, R, Java Script, VBA, M, DAX;
+            </li><br>
+
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Advanced Knowledge in Power BI;
+            </li><br>
+
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Intermediate Knowledge in Ignition;
+            </li><br>
+
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Basic knowledge in SAP;
+            </li><br><br>
+
+
+             <!-- listas com infomações técnicas profissionais-->
+            <h3 
+                style="font-family: Arial, Helvetica, sans-serif;color: #335670;">PERSONAL SKILLS
+            </h3>
+
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Exceptional communication and networking skills;
+            </li><br>
+
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Work successfully in a team environment as well as independently;
+            </li><br>
+
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Able to work under pressure and multitask;
+            </li><br>
+
+            <li 
+                style="font-family: Arial, Helvetica, sans-serif;font-size: medium; color: #0e1a22;">Able to follow instructions and deliver quality results;
+            </li><br>
+
+        </section>
+
+</html>

@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misael Cruz</title>
+    <style>
+        body {
+            margin: 1;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #335670;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        .imagem {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: center;
+            padding-top: 10%;
+
+        } 
+
+        .principal {
+            grid-column-start: 1;
+            grid-column-end: 10;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        .secundario {
+            grid-column-start: 10;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 10px 150px;
+            border: solid #335670 1px;
+        }
+
+        a:hover {
+            background-color: #335670;
+            color: white;
+        }
+
+        li {
+            float: left;
+        }
+
+        /* dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_Misa {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                border-radius: 50%;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- realizando cabeçalho -->
+    <header class="container">
+        <h1 
+            style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: xxx-large;">Misael Gomes da Cruz
+        </h1>
+
+        <h3 
+            style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">Computer Engineer and Systems Analysis and Development
+        </h3><br>
+    </header>
+
+    <!-- realizando menu de links -->
+    <nav class="container menu">
+        <ul>
+            <li>
+                <a href="index.html">My Career</a>
+            </li>
+
+            <li>
+                <a href="aboutme.html">About Me</a>
+            </li>
+
+            <li>
+                <a href="jobs.html">Jobs</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- realizando a tela esquerda com o fomrulário -->
+    <div class="container wrapper">
+        <section class="principal">
+
+            <br><br>
+
+            <h3 
+                style="font-family: Arial, Helvetica, sans-serif;color: #335670;text-align: START;">SIMPLE FORM
+            </h3>
+
+            <form>
+
+                <br>
+
+                <label 
+                    for = "nome" style="font-family: Arial, Helvetica, sans-serif;color: #335670;text-align: center;"> NAME: 
+                </label>
+
+                <input 
+                    id = "nome" style = "display:flex; padding-right: 20%; padding-bottom: 2%;">
+                <br><br>
+
+                <label 
+                    for = "email" style="font-family: Arial, Helvetica, sans-serif;color: #335670;text-align: center;"> EMAIL: 
+                </label>
+
+                <input 
+                    id = "email" style = "display:flex; padding-right: 20%; padding-bottom: 2%;" >
+                <br><br>
+
+                <label 
+                    for = "msn" style="font-family: Arial, Helvetica, sans-serif;color: #335670;text-align: center;" > MESSAGE: 
+                </label>
+
+                <input 
+                    id = "msn" style = "display:flex; padding-right: 20%; padding-bottom: 2%;">
+                <br><br>
+
+                <input type = "button"  style="font-family: Arial, Helvetica, sans-serif;color: #335670;text-align: start; font-size: large; align-items: center;" value="Send" onclick="Salvar()">
+            </form>
+        </section>
+
+        <!-- realizando a tela da direita com a imagem -->
+        <section class="secundario">
+            <aside class="imagem">
+                <img src="form.png" title = "Thank You!" width="55%">
+            </aside>
+        </section>
+</html>
