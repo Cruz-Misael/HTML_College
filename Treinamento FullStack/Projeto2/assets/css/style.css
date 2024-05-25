@@ -29,7 +29,6 @@ body {
 
 .resultado{
   background-color: #0f5705;
-
 }
 
 div{
@@ -71,4 +70,14 @@ form button:hover {
 
 form button:active {
   background: var(--primary-color-black);
+}
+
+.paragrafo-resultado {
+  background: rgb(109, 255, 182);
+  
+}
+
+.bad {
+  background: rgb(255, 150, 150);
+  padding: 10px 20px;
 }

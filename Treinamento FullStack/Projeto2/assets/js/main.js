@@ -33,8 +33,7 @@ function meuEscopo (){
         setResultado(msg, true);
 
         function getNivelImc (imc) {
-            const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso',
-              'Obesidade grau 1', 'Obesidade grau 2', 'Obesidade grau 3'];
+            const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade grau 1', 'Obesidade grau 2', 'Obesidade grau 3'];
           
             if (imc >= 39.9) return nivel[5];
             if (imc >= 34.9) return nivel[4];
@@ -46,7 +45,7 @@ function meuEscopo (){
           
         function getImc (peso, altura) {
         const imc = peso / altura ** 2;
-        return imc.toFixed(2);
+        return imc.toFixed(2); // duas casas decimais
         }
 
         function setResultado (msg, isValid) {
@@ -56,16 +55,19 @@ function meuEscopo (){
         const p = criaP();
         
         if (isValid) {
-            p.classList.add('paragrafo-resultado');
+            p.classList.add('paragrafo-resultado'); //cria uma classe para o css
         } else {
-            p.classList.add('bad');
+            p.classList.add('bad'); //cria uma classe para o css
         }
         
         p.innerHTML = msg;
-        resultado.appendChild(p);
+        resultado.appendChild(p); //insere o css na div
         }
-
-
+        
+        function criaP () {
+            const p = document.createElement('p'); //cria elemento no documento
+            return p;
+        }
 
         
     });
