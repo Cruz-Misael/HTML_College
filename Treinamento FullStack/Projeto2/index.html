@@ -40,12 +40,16 @@
     </div>
 
     <h4>Calcule o IMC</h4>
-    <form class="form" action="" method="get">
-      <p> Peso: <input type="text" class="peso"> </p>
-      <p> Altura: <input type="text" class="altura"> </p>
-      <button>Enviar</button>
+    <form action="/" id="formulario" method="POST">
+      <label for="peso">Peso</label>
+      <input type="text" id="peso" name="peso">
+      <label for="altura">Altura</label>
+      <input type="text" id="altura" name="altura">
+      <button type="submit">Enviar</button>
     </form>
-    
+
+    <div id="resultado"></div>
+   
   </section>
 
  
