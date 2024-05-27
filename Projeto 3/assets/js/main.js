@@ -1,43 +1,51 @@
-function relogio() {
-  function criaHoraDosSegundos(segundos) {
-    const data = new Date(segundos * 1000);
+function scope (){
+
+  const clock = document.querySelector('.clock');
+  const start = document.querySelector('.start');
+  const pause = document.querySelector('.pause');
+  const reset = document.querySelector('.reset');
+
+  let sec = 0;
+  let timer;
+
+  start.addEventListener('click', function(e){
+    e.preventDefault();
+    clearInterval(timer);
+    clock.classList.remove('stoped'); // add or remove an css class
+    startClock();
+  });
+
+  pause.addEventListener('click', function(e){
+    e.preventDefault();
+    clearInterval(timer);
+    clock.classList.add('stoped'); // add or remove an css class
+  });
+
+
+  reset.addEventListener('click', function(e){
+    e.preventDefault();
+    clearInterval(timer);
+    clock.classList.remove('stoped'); // add or remove an css class
+    clock.innerHTML = '00:00:00';
+    sec = 0;
+
+  });
+
+  function showHour(sec) {
+    const data = new Date(sec * 1000);
     return data.toLocaleTimeString('pt-BR', {
       hour12: false,
       timeZone: 'UTC'
     });
-  }
+  };
 
-  const relogio = document.querySelector('.relogio');
-  let segundos = 0;
-  let timer;
-
-  function iniciaRelogio() {
+  function startClock() {
     timer = setInterval(function() {
-      segundos++;
-      relogio.innerHTML = criaHoraDosSegundos(segundos);
+      sec++;
+      clock.innerHTML = showHour(sec);
     }, 1000);
-  }
+  };
 
-  document.addEventListener('click', function(e) {
-    const el = e.target;
+};
 
-    if (el.classList.contains('zerar')) {
-      clearInterval(timer);
-      relogio.innerHTML = '00:00:00';
-      relogio.classList.remove('pausado');
-      segundos = 0;
-    }
-
-    if (el.classList.contains('iniciar')) {
-      relogio.classList.remove('pausado');
-      clearInterval(timer);
-      iniciaRelogio();
-    }
-
-    if (el.classList.contains('pausar')) {
-      clearInterval(timer);
-      relogio.classList.add('pausado');
-    }
-  });
-}
-relogio();
+scope();
