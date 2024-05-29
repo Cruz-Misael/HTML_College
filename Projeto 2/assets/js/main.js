@@ -3,7 +3,8 @@
 function meuEscopo (){
     
     
-    const form = document.querySelector(".form");
+    const form = document.querySelector("#form");
+
     
     form.addEventListener('submit', function (e){
 
@@ -12,8 +13,10 @@ function meuEscopo (){
         const inputPeso = e.target.querySelector('#peso');
         const inputAltura = e.target.querySelector('#altura');
 
-        peso = Number(inputPeso);
-        altura = Number(inputAltura);
+        peso = Number(inputPeso.value);
+        altura = Number(inputAltura.value);
+
+        console.log(peso, altura);
 
         if (!peso) {
             setResultado('Peso inválido', false);
